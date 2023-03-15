@@ -1,0 +1,282 @@
+#big-picture-container{
+    position: relative;
+}
+
+body{
+    background-color:#2E4B6A;
+}
+
+.image-banner{
+    background-image: linear-gradient(0deg, rgba(10, 7, 43, 0.3), rgba(37, 31, 109, 0.3)), url('/Users/charlottekwon/Desktop/midterm/midterm-starter/assets/topdog.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    background-position: right;
+    border-radius: 20px;
+}
+
+.header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    font-family: Xanh Mono, monospace;
+    color: white;
+}
+
+.top-dog {
+    position: fixed;
+    font-family: Xanh Mono, monospace;
+    top: 2%;
+    font-size:60px;
+    color: white;
+    text-shadow: black 3px 3px 3px; /* shadow color, offset x, offset y, blur radius*/
+    margin-left: 30px;
+    background-color: #AA1010;
+    width: 100%;
+    padding-top: 0.5%;
+    padding-left: 2.5%;
+    padding-bottom: 1.5%;
+    border-radius: 17px;
+    z-index: 1;
+    /*animation-name: upDown;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 2;*/
+}
+
+.nostalgia{
+    position: absolute;
+    font-family: Krub, sans-serif;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-shadow: black 3px 3px 3px;
+    width: 300px;
+    top: 25%;
+    margin: 100px;
+    
+}
+
+.menu-button{
+    background-color: #AA1010;
+    position: absolute;
+    top: 62%;
+    width: 300px;
+    height: 70px;
+    font-weight: bold;
+    margin-left: 100px;
+    border-radius: 17px;
+}
+
+.menu-text{
+    position: absolute;
+    color: white;
+    font-family: Ubuntu;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 7%;
+    padding-left: 27%;
+    align-items: center;
+}
+
+.origin-container{
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: rows;
+}
+
+
+
+/*.menu-text{
+    color: white;
+    font-family: Ubuntu;
+    font-size: 20px;
+    margin: auto;
+    letter-spacing: 2px;
+    font-weight: bold;
+}*/
+
+
+#view-menu{
+    background-color: #AA1010;
+    color: white;
+    font-family: Ubuntu;
+    width: 250px;
+    height: 60px;
+    padding-left: 60px;
+}
+
+h3{
+    color: white;
+    position: relative;
+    margin-top: 60px;        
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Koulen', sans-serif;
+    margin-bottom: 40px;
+    line-height: 40px;
+    margin-top: 8%;
+    letter-spacing: 2.5px;
+}
+
+p{
+    color: #C3CBD3;
+    font-family: Krub, sans-serif;
+    font-weight: bold;
+    line-height: 35px;
+    width: 700px;
+    letter-spacing: 1.8px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.menu-button:hover{
+    background-color: #8B1515;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+/*MENU PAGE*/
+
+.menu-container{
+    height: 120px;
+}
+
+.menu{
+    position: fixed;
+    font-family: Xanh Mono, monospace;
+    top: 3%;
+    font-size:60px;
+    color: white;
+    text-shadow: black 3px 3px 3px; /* shadow color, offset x, offset y, blur radius*/
+    margin-left: 30px;
+    background-color: #AA1010;
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-bottom: 1.5%;
+    border-radius: 17px;
+    z-index: 1;
+    animation-name: menuAni;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes menuAni {
+    0% {top: 20%; }
+    100% {top: 3%;}
+}
+
+.fan-favorite-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+
+.fan-favorite{
+    font-family: 'Koulen', sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.frank-image{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    opacity: .7;
+    transition: .3s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frank-image:hover{
+    opacity: .9;
+    transition: .3s;
+}
+
+.favorite-dog{
+    padding-top: 20px;
+    font-family: 'Koulen', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.dog-description-favorite{
+    font-family: 'Krub', sans-serif;
+    color: #C3CBD3;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu-page-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 5%;
+   
+}
+
+.dog{
+    font-family: 'Koulen', sans-serif;
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.row1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%
+    
+}
+
+.row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.dog-description{
+    font-family: 'Krub', sans-serif;
+    color: #C3CBD3;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-content: space-around;
+    margin: 2%;
+}
+.footer-text{
+    color: white;
+    font-family: Xanh Mono, monospace;
+    font-size: 15px;
+}
+a:link{
+    text-decoration: none;
+}
+
+
+
